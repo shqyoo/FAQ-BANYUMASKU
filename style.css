@@ -1,0 +1,137 @@
+/* Pengaturan Dasar dan Font Montserrat */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdfaf7;
+    color: #3B1E54; /* Warna font utama baru */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Kontainer Utama FAQ */
+.faq-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+
+/* Header: Logo dan Pencarian */
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+    gap: 15px;
+}
+
+.logo {
+    max-height: 50px; /* Atur tinggi maksimal logo */
+    height: auto;
+}
+
+.search-container {
+    flex-grow: 1;
+    padding: 20px 30px;
+    max-width: 280px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #3B1E54;
+    box-shadow: 0 0 5px rgba(59, 30, 84, 0.2);
+}
+
+/* Judul Utama */
+h1 {
+    text-align: center;
+    color: #3B1E54;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Judul Kategori */
+.category-title {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #3B1E54;
+    border-bottom: 2px solid #f0eaf6;
+    padding-bottom: 8px;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+/* Setiap item FAQ (Q & A) */
+.faq-item {
+    border-bottom: 1px solid #f0eaf6;
+    margin-bottom: 10px;
+}
+
+/* Tombol Pertanyaan */
+.faq-question {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    padding: 18px 5px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    color: #3B1E54; /* Warna baru */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f9f6fd;
+}
+
+.faq-question .icon {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #3B1E54; /* Warna baru */
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active .icon {
+    transform: rotate(45deg);
+}
+
+/* Kontainer Jawaban */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    background-color: #fcfaff;
+    padding: 0 20px;
+    font-weight: 400;
+}
+
+.faq-answer p {
+    margin: 0;
+    padding: 20px 0;
+    color: #594672; /* Sedikit lebih terang untuk jawaban */
+}
+
+/* Pesan Tidak Ditemukan */
+#noResultsMessage {
+    text-align: center;
+    padding: 30px;
+    color: #888;
+    font-style: italic;
+}
